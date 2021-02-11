@@ -1,0 +1,13 @@
+name: 'Hola Mundo JS Action'
+description: 'Greet someone and record the time'
+inputs:
+  who-to-greet:  # Parámetro de entrada
+    description: 'Who to greet'
+    required: true
+    default: 'Mundo'
+outputs:
+  time: # Parámetro de salida
+    description: 'The time we greeted you'
+runs:
+  using: 'node14'
+  main: 'index.js'
